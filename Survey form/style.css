@@ -1,0 +1,44 @@
+body{
+    text-align: left;
+    background-image: url(https://images.unsplash.com/photo-1619431486830-4477e6e0783d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+.form-group{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1, #description{
+    text-align: center;
+    color: azure;
+}
+.form-group, #details{
+    font-size: 18px;
+    color: azure;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#survey-form{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start:10%;
+    margin-inline-end: 10%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,120,121,1) 67%, rgba(0,212,255,1) 100%);
+}
+.form-check-label{
+    padding-left: 2.5em;
+}
+#text-ar{
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+}
+#submit{
+    width: 100%;
+}
