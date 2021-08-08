@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="i_style.css">
+</head>
+<body>
+    <nav id="navbar" class="nav_">
+        <header id="title">C/C++</header>
+        <ul>
+        <li><a href="#history" class="nav-link">History</a></li>
+        <li><a href="#data_types" class="nav-link">Data Types</a></li>
+        <li><a href="#variables" class="nav-link">Variables</a></li>
+        <li><a href="#operators_in_c/c++" class="nav-link">Operators in C/C++</a></li>
+        <li><a href="#conditional_statements" class="nav-link">Conditional Statements</a></li>
+        <li><a href="#loops" class="nav-link">Loops</a></li>
+        <li><a href="#functions" class="nav-link">Functions</a></li>
+        <li><a href="#array" class="nav-link">Array</a></li>
+        <li><a href="#refrence" class="nav-link">Refrence</a></li>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="history">
+            <header><b>History</b></header>
+                <p>
+                    C++ is a general purpose programming language created by <b>Bjarne Stroustrup</b> as an extension of C programming language
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            In 1985, the first edition of The C++ Programming Language was released, which became the definitive reference for the language, as there was not yet an official standard. The first commercial implementation of C++ was released in October of the same year.
+                        </p>
+                    </li>
+                
+                    <li>
+                        <p>
+                            In 1989, C++ 2.0 was released, followed by the updated second edition of The C++ Programming Language in 1991. New features in 2.0 included multiple inheritance, abstract classes, static member functions, const member functions, and protected members. In 1990, The Annotated C++ Reference Manual was published. This work became the basis for the future standard. Later feature additions included templates, exceptions, namespaces, new casts, and a Boolean type.
+                        </p>
+                    </li>
+                    <li>
+                        <p>In 1998, C++98 was released, standardizing the language, and a minor update (C++03) was released in 2003.</p>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="main-section" id="data_types">
+            <header><b>Data Types</b></header>
+                <p>Data types are used to tell the variables the type of data it can store. When a variable is declared in C++, the compiler allocates the memory for the variable. Every data type requires different amount of memory.</p>
+                <ul>
+                    <li>
+                        <p>Data types in C++ are divided into three parts:</p>
+                        <li>
+                            <p><b>Primitive Data Types:</b> These are the pre defined data types and can be usesd directly by declaring variable type. These are integer, floating point, character, boolean etc.
+                            </p>
+                            <ul>
+                                <li><p><b>Integer:</b> Integer data types are declared by prefixing a keyword <b>int</b> with variable.</p></li>
+                                <p><b>Example:</b><code> int a = 10;</code></p>
+                            </ul>
+                            <ul>
+                                <li><p><b>Floating Point:</b> These data types are declared by prefixing a keyword <b>float</b> with variable.</p></li>
+                                <p><b>Example:</b><code> float b = 1.5;</code></p>
+                            </ul>
+                            <ul>
+                                <li><p><b>Character:</b> These data type variable are prefixed with keyword <b>char</b>.</p></li>
+                                <p><b>Example:</b><code> char c = 'A';</code></p>
+                            </ul>
+                            <ul>
+                                <li><p><b>Boolean:</b> These data type variable are prefixed with keyword <b>bool</b>.</p></li>
+                                <p><b>Example:</b><code> bool is_int = true;</code></p>
+                            </ul>
+                        </li>
+                        <li><p><b>Derived Data types:</b>These data-types are derived from the primitive datatypes. These can be of four types namely: 
+                            <ol> 
+                                <li>Function</li>
+                                <li>Array</li>
+                                <li>POinter</li>
+                                <li>Reference</li>.
+                            </ol></p>
+                        </li>
+                        <li>
+                            <p><b>User-Defined Data types:</b>These are defind by user. C++ provides following user-defined data types:</p>
+                            <ol>
+                                <li>Structure</li>
+                                <li>Union</li>
+                                <li>Class</li>
+                                <li>Enumeration</li>
+                                <li>Typedef defined data types</li>
+                            </ol>
+                        </li>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header><b>Variables</b></header>
+            <p>A variable is a name given to a memory location.</p>
+            <ul>
+                <li>The value stored in a variable can be changed during program execution.</li>
+                <li>In C++, all the variables must be declared before use.</li>
+                <li>A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.</li>
+                    <b><p>Declaring a variable</p></b>
+                        <code>// Single variable declation <br> type variable_name; <br>
+                        //Multiple variable declation <br>type variable1_name, type variable2_name type variable3_name;
+                        </code>
+                
+                <p>A variable name can consist of alphabets (both upper and lower case), numbers and the underscore ‘_’ character. However, the variable name must not start with a number.</p>
+            </ul>
+        </section>
+
+        <section class="main-section" id="operators_in_c/c++">
+            <header><p><b>Operators in C/C++</b></p></header>
+            <ul>
+                <li>Operators are the symbols that help us to perform specific mathematical and logical computations on operands.</li>
+                <li>C/C++ offers many built in operator types and they are as follows:</li>
+                <ul>
+                    <li><b>Arithmetic Operators:</b> These are the operators used to perform arithmetic/mathematical operations on operands. Examples: (+, -, *, /, %,++,–).</li>
+                    <li><b>Relation Operators:</b> These operators are used for comparison of the values of two operands. Some of the relational operators are (==, >= , <= ).</li>
+                    <li><b>Logical Operators:</b> Logical Operators are used to combine two or more conditions/constraints or to complement the evaluation of the original condition in consideration. The result of the operation of a logical operator is a boolean value either true or false.</li>
+                    <li><b>Bitwise Operators:</b> The Bitwise operators is used to perform bit-level operations on the operands. The operators are first converted to bit-level and then the calculation is performed on the operands. The mathematical operations such as addition, subtraction, multiplication etc. can be performed at bit-level for faster processing.</li>
+                    <li><b>Assignment Operators:</b> Assignment operators are used to assign value to a variable. The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. The value on the right side must be of the same data-type of variable on the left side otherwise the compiler will raise an error. <br>Different types of assignment operators are shown below: <br><br>
+                        <b>1. “=” :</b> This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left.
+                        
+                            <b>Example:</b><code> a = 10;</code>
+
+                        <b>2. "+=" :</b> This operator is combination of ‘+’ and ‘=’ operators. This operator first adds the current value of the variable on left to the value on right and then assigns the result to the variable on the left. 
+                            
+                                <b>Example: </b><code>(a += b) can be written as (a = a + b)</code>
+                            
+                        <b>3. "-=" :</b> This operator is combination of ‘-‘ and ‘=’ operators. This operator first subtracts the value on right from the current value of the variable on left and then assigns the result to the variable on the left. 
+                            
+                                <b>Example: </b><code>(a -= b) can be written as (a = a - b)</code>
+                            
+                        <b>4. "*=" :</b> This operator is combination of ‘*’ and ‘=’ operators. This operator first multiplies the current value of the variable on left to the value on right and then assigns the result to the variable on the left.
+                        
+                            <b>Example: </b><code>(a *= b) can be written as (a = a * b)</code>
+                        
+                        <b>5. "/=" :</b> This operator is combination of ‘/’ and ‘=’ operators. This operator first divides the current value of the variable on left by the value on right and then assigns the result to the variable on the left. 
+                        
+                            <b>Example: </b><code>(a /= b) can be written as (a = a / b)</code>
+                        
+                    </li>
+                    
+                </ul>
+            </ul>
+        </section>
+
+        <section class="main-section" id="conditional_statements">
+            <header><b>Conditional Statements</b></header>
+            <ul>
+                <li><p>In programming where we need to make some decisions and based on these decisions we will execute the next block of code. There we need the conditional statements.</p></li>
+                <li><p>Decision-making statements in programming languages decide the direction of the flow of program execution. Decision-making statements available in C or C++ are: </p></li>
+                <ol>
+                    <li>
+                        <p><b>if statement:</b> If statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.</p>
+                    </li>
+                        <p><b>Syntax:</b>
+                            <code><b>if (condition)</b><br>{<br> //statements to execute if condition is true <br>}</code>
+                            
+                        </p>    
+
+                    <li>
+                        <p><b>if...else statements:</b> We can use the else statement with if statement to execute a block of code when the condition is false.</p>
+                    </li>
+                        <p><b>Syntax:</b>
+                                <code><b>if (condition)</b><br>{<br> //statements to execute if condition is true <br>}<br><b>else</b><br>{<br> //statements to execute if condition is false <br>}</code>
+                        </p>
+                    <li>
+                        <p><b>nested if statements:</b> Nested if statements mean an if statement inside another if statement.</p>
+                    </li>
+                        <p><b>Syntax:</b>
+                                <code><b>if (condition1)</b><br>{<br>// execute when condition1 is true<br>if (condition2)<br></b>{<br> //execute when condition2 is true<br>}</b><br>}</code>
+                        </p>
+
+                    <li>
+                        <p><b>if-else-if ladder:</b> Here, a user can decide among multiple options. The C++ if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the C else-if ladder is bypassed. <br> If none of the conditions are true, then the final else statement will be executed. </p>
+                    </li>
+                        <p><b>Syntax: </b>
+                                <code><b>if (condition)</b><br>statement;<br><b>else if(condition)</b><br>statement;<br><b>.</b><br><b>.</b><br><b>else</b><br>statement;</code>
+                        </p>
+                    </ul>
+
+                    <li><p><b>switch statement:</b> Switch case statements are a substitute for long if statements that compare a variable to several integral values.
+                        <ul>
+                            <li>The switch statement is a multiway branch statement.</li> 
+                            <li>It provides an easy way to dispatch execution to different parts of code based on the value of the expression.</li>
+                            <li>Switch is a control statement that allows a value to change control of execution</li>
+                        </ul>
+                    </p></li>
+                    <li><p><b>Jump Statements:</b>These statements are used in C orC++ for the unconditional flow of control throughout the functions in a program. They support four types of jump statements:</p>
+                        <ol>
+                            <li>break</li>
+                            <li>continue</li>
+                            <li>goto</li>
+                            <li>return</li>
+                        </ol>
+                    </li>
+                </ol>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="loops">
+            <header><b>Loops</b></header>
+                <ul>
+                    <li><p>Loops are self-repeating statements which repeat themselves untill a certain Condition is reached.</p></li>
+                    <li><p>Every loop has three statements</p></li>
+                    <ol>
+                        <li>
+                            <p><b>Initilization expression:</b>In this statement we initialize the loop counter variableto some value. Example: int i = 0;</p>
+                        </li>
+                        <li>
+                            <p><b>Test Expression:</b>In this statement we test the condition. If the condition evaluates to true then we will execute the body of loop and go to update expression otherwise we will exit from the for loop
+                            Example: i <= 10;</p>
+                        </li>
+                        <li>
+                            <p><b>Update Expression:</b>In this statement we increment/decrement loop variable by some value after executing the loop body. Example: i++;</p>
+                        </li>
+                    </ol>
+                    <li>There are mainly two type of loops:</li>
+                        <ol>
+                            <li>Entry Control Loops.</li>
+                            <li>Exit Control Loops.</li>
+                        </ol>
+                    <li><p><b>Entry Control Loops:</b> There is two entry control loops</p>
+                    <ul>
+                        <li>
+                            <p><b>For loop:</b>We initilize this loop when we know exact number of iterations and we control the loop using a loop variable.</p>
+                        </li>
+                            <b>Example:</b>
+                                <code>#include"stdio.h"
+                                int main()
+                                {
+                                for(int i = 0; i<=5; i++)
+                                    {
+                                        cout<<"Hello world";
+                                    }
+                                }</code>
+                        <li>
+                            <p><b>While Loop:</b> While loops are used in situations where we do not know the exact number of iterations of loop beforehand. The loop execution is terminated on the basis of test condition.</p>
+                        </li>
+                            <p><b>Syntax:</b></p>
+                            
+                            <code><b>initilization expression;<br></b>while <b>(test_expression)</b><br> {<br>//statements<br><b>update_expression;</b><br>}</code>
+                    </ul>
+                    <li><p><b>Exit control Loops: There is only one exit control loop</b></p></li>
+                    <ul>
+                        <li><p><b>do while loop:</b> This loop is also terminated by test condition. The main difference between while and do while loop is in do while loop test condition is tested at the end of the loop body. So, do while loop execute at least once irrespective of test condition.</p></li>
+
+                        <p><b>Syntax:</b></p>
+                            
+                    <code><b>initilization expression;</b> <br><b>do</b><br>{<br>//statements <br><b>update_expression;</b><br>} while <b>(test_expression);</b></code>
+                    </ul>
+                </ul>
+        </section>
+
+        <section class="main-section" id="functions">
+            <header><p><b>Functions</b></p></header>
+                <ul>
+                    <li>A function is a set of statements that take inputs, do some specific computation and produces output.</li>
+                    <li>The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can call the function.</li>
+                    <li>General form of a function is:</li>
+                    <code class="code_"><b>return_type function_name([ arg1_type arg1_name, ... ]) { code }</b></code>
+                </ul>
+                <ul>
+                    <li><b>Function Declaration:</b>A function declaration tells the compiler about the number of parameters function takes, data-types of parameters and return type of function. </li>
+                    <img class="img" src="https://www.geeksforgeeks.org/wp-content/uploads/Function-Prototype-in-c.png" alt="">
+                    <li><b>Passing Parameters to function:</b>The parameters passed to function are called actual parameters. The parameters received by function are called formal parameters.</li>
+                    <ul>
+                        <li><b>Pass by Value:</b> In this parameter passing method, values of actual parameters are copied to function’s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in actual parameters of caller.</li>
+                        <li><b>Pass by Reference:</b> Both actual and formal parameters refer to same locations, so any changes made inside the function are actually reflected in actual parameters of caller.</li>
+                        <b>Example:</b>
+                            <p><code class="code_"><b>#include"stdio.h"<br>void fun(int *ptr)</b><br>{<br>*ptr=30;<br>}<br><b>int main()</b><br>{<br>int x = 20; <br><b>fun(&x)</b><br>printf("x =%d", x);<br><b>return 0;<br>}</b></code></p>
+                    </ul>
+                </ul>
+
+        </section>
+
+        <section class="main-section" id="array">
+            <header><p><b>Array</b></p></header>
+            <ul>
+                <li>An array in C/C++ or be it in any programming language is a collection of similar data items stored at contiguous memory locations and elements can be accessed randomly using indices of an array.</li>
+                <li>They can be used to store collection of primitive data types such as int, float, double, char, etc of any particular type.</li>
+                <img class="img" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Array-Declaration-In-C.png" alt="">
+                <li>Advantage of arrays:</li>
+                <ul>
+                    <li>Random access of elements using array index.</li>
+                    <li>Use of less line of code as it creates a single array of multiple elements.</li>
+                    <li>Easy access to all the elements.</li>
+                    <li>Traversal through the array becomes easy using a single loop.</li>
+                    <li>Sorting becomes easy as it can be accomplished by writing less line of code.</li>
+                </ul>
+            </ul>
+        </section>
+        <hr>
+        <section class="main-section" id="refrence">
+            <header>Refrence</header>
+            <p>All refrences Documentation in this page is taken from <a href="https://www.geeksforgeeks.org/c-plus-plus/">GeekforGeeks</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
