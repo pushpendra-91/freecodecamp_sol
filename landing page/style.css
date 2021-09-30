@@ -177,7 +177,9 @@ h2{
     padding: 10px 10px;
 }
 .footer1{
-    background-color: lightgrey;
+    padding: 10px;
+    background: linear-gradient(rgb(199, 179, 179), rgba(216, 140, 140, 0.63), pink);
+    /* background-color: lightgrey; */
     text-align: center;
 }
 .f-li{
