@@ -42,3 +42,17 @@ h1, #description{
 #submit{
     width: 100%;
 }
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(109, 116, 122);
+    opacity: 0.8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.footer a {
+    color: white;
+}
