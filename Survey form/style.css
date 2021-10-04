@@ -1,6 +1,6 @@
 body{
     text-align: left;
-    background-image: url(https://images.unsplash.com/photo-1619431486830-4477e6e0783d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-image: url(https://images.unsplash.com/photo-1583078156135-8e04f60c2606?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1100&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm9ybXx8fHx8fDE2MzMyNTA4Mzg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600);
 }
 *, *::after, *::before{
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body{
 }
 h1, #description{
     text-align: center;
-    color: azure;
+    color: rgb(9, 173, 173);
 }
 .form-group, #details{
     font-size: 18px;
